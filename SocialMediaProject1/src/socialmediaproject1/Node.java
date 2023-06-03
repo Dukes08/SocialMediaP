@@ -8,22 +8,15 @@ package socialmediaproject1;
  *
  * @author macbookpro
  */
-public class Node {
+public class Node <T>{
     
-    private int data;
     private Node pNext;
+    
+    private T value;
 
-    public Node(int data) {
-        this.data = data;
+    public Node(T value) {
         this.pNext = null;
-    }
-
-    public int getData() {
-        return data;
-    }
-
-    public void setData(int data) {
-        this.data = data;
+        this.value = value;
     }
 
     public Node getpNext() {
@@ -33,5 +26,17 @@ public class Node {
     public void setpNext(Node pNext) {
         this.pNext = pNext;
     }
+
+    public T getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
+        this.value = value;
+    }
+    
+    
+    
+    
     
 }
